@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D39A7272435AE1100A3FDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A7262435AE1100A3FDCB /* AppDelegate.swift */; };
+		6D39A72C2435AE1100A3FDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D39A72A2435AE1100A3FDCB /* Main.storyboard */; };
+		6D39A72E2435AE1100A3FDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D39A72D2435AE1100A3FDCB /* Assets.xcassets */; };
+		6D39A7312435AE1100A3FDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D39A72F2435AE1100A3FDCB /* LaunchScreen.storyboard */; };
+		6D39A73D2435B05300A3FDCB /* DJPlaylistDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A73C2435B05300A3FDCB /* DJPlaylistDatabase.swift */; };
+		6D39A73F2435B26A00A3FDCB /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A73E2435B26A00A3FDCB /* PlaylistCell.swift */; };
+		6D39A7432435B29400A3FDCB /* DJPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A7422435B29400A3FDCB /* DJPlaylistViewController.swift */; };
+		6D39A74724368F2800A3FDCB /* BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39A74624368F2800A3FDCB /* BrowserView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D39A7232435AE1100A3FDCB /* RadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D39A7262435AE1100A3FDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D39A72B2435AE1100A3FDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D39A72D2435AE1100A3FDCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D39A7302435AE1100A3FDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D39A7322435AE1100A3FDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D39A73C2435B05300A3FDCB /* DJPlaylistDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJPlaylistDatabase.swift; sourceTree = "<group>"; };
+		6D39A73E2435B26A00A3FDCB /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
+		6D39A7422435B29400A3FDCB /* DJPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJPlaylistViewController.swift; sourceTree = "<group>"; };
+		6D39A74624368F2800A3FDCB /* BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D39A7202435AE1100A3FDCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D39A71A2435AE1100A3FDCB = {
+			isa = PBXGroup;
+			children = (
+				6D39A7252435AE1100A3FDCB /* RadioApp */,
+				6D39A7242435AE1100A3FDCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D39A7242435AE1100A3FDCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D39A7232435AE1100A3FDCB /* RadioApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D39A7252435AE1100A3FDCB /* RadioApp */ = {
+			isa = PBXGroup;
+			children = (
+				6D39A7262435AE1100A3FDCB /* AppDelegate.swift */,
+				6DFF41EF2436C0D6003570B5 /* Models */,
+				6DFF41EE2436C0C3003570B5 /* Views */,
+				6DFF41EC2436C06A003570B5 /* View Controllers */,
+				6DFF41EB2436C04E003570B5 /* Storyboards */,
+				6D39A72D2435AE1100A3FDCB /* Assets.xcassets */,
+				6D39A7322435AE1100A3FDCB /* Info.plist */,
+			);
+			path = RadioApp;
+			sourceTree = "<group>";
+		};
+		6DFF41EB2436C04E003570B5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6D39A72F2435AE1100A3FDCB /* LaunchScreen.storyboard */,
+				6D39A72A2435AE1100A3FDCB /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6DFF41EC2436C06A003570B5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D39A74624368F2800A3FDCB /* BrowserView.swift */,
+				6D39A7422435B29400A3FDCB /* DJPlaylistViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6DFF41EE2436C0C3003570B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D39A73E2435B26A00A3FDCB /* PlaylistCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DFF41EF2436C0D6003570B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D39A73C2435B05300A3FDCB /* DJPlaylistDatabase.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D39A7222435AE1100A3FDCB /* RadioApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D39A7352435AE1100A3FDCB /* Build configuration list for PBXNativeTarget "RadioApp" */;
+			buildPhases = (
+				6D39A71F2435AE1100A3FDCB /* Sources */,
+				6D39A7202435AE1100A3FDCB /* Frameworks */,
+				6D39A7212435AE1100A3FDCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadioApp;
+			productName = "DPaez013-P5";
+			productReference = 6D39A7232435AE1100A3FDCB /* RadioApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D39A71B2435AE1100A3FDCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "David Paez";
+				TargetAttributes = {
+					6D39A7222435AE1100A3FDCB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6D39A71E2435AE1100A3FDCB /* Build configuration list for PBXProject "RadioApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D39A71A2435AE1100A3FDCB;
+			productRefGroup = 6D39A7242435AE1100A3FDCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D39A7222435AE1100A3FDCB /* RadioApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D39A7212435AE1100A3FDCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D39A7312435AE1100A3FDCB /* LaunchScreen.storyboard in Resources */,
+				6D39A72E2435AE1100A3FDCB /* Assets.xcassets in Resources */,
+				6D39A72C2435AE1100A3FDCB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D39A71F2435AE1100A3FDCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D39A73F2435B26A00A3FDCB /* PlaylistCell.swift in Sources */,
+				6D39A73D2435B05300A3FDCB /* DJPlaylistDatabase.swift in Sources */,
+				6D39A74724368F2800A3FDCB /* BrowserView.swift in Sources */,
+				6D39A7432435B29400A3FDCB /* DJPlaylistViewController.swift in Sources */,
+				6D39A7272435AE1100A3FDCB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D39A72A2435AE1100A3FDCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D39A72B2435AE1100A3FDCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D39A72F2435AE1100A3FDCB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D39A7302435AE1100A3FDCB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D39A7332435AE1100A3FDCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D39A7342435AE1100A3FDCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D39A7362435AE1100A3FDCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZ29P23JHJ;
+				INFOPLIST_FILE = RadioApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidpaez.RadioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D39A7372435AE1100A3FDCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZ29P23JHJ;
+				INFOPLIST_FILE = RadioApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidpaez.RadioApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D39A71E2435AE1100A3FDCB /* Build configuration list for PBXProject "RadioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D39A7332435AE1100A3FDCB /* Debug */,
+				6D39A7342435AE1100A3FDCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D39A7352435AE1100A3FDCB /* Build configuration list for PBXNativeTarget "RadioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D39A7362435AE1100A3FDCB /* Debug */,
+				6D39A7372435AE1100A3FDCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D39A71B2435AE1100A3FDCB /* Project object */;
+}

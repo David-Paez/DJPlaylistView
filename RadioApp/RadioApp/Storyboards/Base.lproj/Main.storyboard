@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4EX-Eh-X3p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DJ Playlists-->
+        <scene sceneID="Jmh-wl-6mA">
+            <objects>
+                <tableViewController id="kz2-o7-C2C" customClass="DJPlaylistViewController" customModule="RadioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5aw-cv-VOt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="159" id="0mi-hE-LaW" customClass="PlaylistCell" customModule="RadioApp">
+                                <rect key="frame" x="0.0" y="28" width="375" height="159"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0mi-hE-LaW" id="Wnm-z2-dUS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="158.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WKU-RI-dKz">
+                                            <rect key="frame" x="24" y="34.5" width="90" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="8F9-69-KFs"/>
+                                                <constraint firstAttribute="width" constant="90" id="E4R-Te-3wh"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouo-6r-OGe">
+                                            <rect key="frame" x="323.5" y="69" width="43.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="WKU-RI-dKz" secondAttribute="bottom" constant="23.5" id="O8i-p5-BFm"/>
+                                        <constraint firstItem="WKU-RI-dKz" firstAttribute="centerY" secondItem="Wnm-z2-dUS" secondAttribute="centerY" id="OQ8-4v-dOH"/>
+                                        <constraint firstItem="WKU-RI-dKz" firstAttribute="leading" secondItem="Wnm-z2-dUS" secondAttribute="leadingMargin" constant="8" id="Yuy-B1-r32"/>
+                                        <constraint firstAttribute="bottom" secondItem="ouo-6r-OGe" secondAttribute="bottom" constant="69" id="ecb-pD-6CK"/>
+                                        <constraint firstAttribute="trailing" secondItem="ouo-6r-OGe" secondAttribute="trailing" constant="8" id="ha4-7s-siy"/>
+                                        <constraint firstItem="ouo-6r-OGe" firstAttribute="centerY" secondItem="Wnm-z2-dUS" secondAttribute="centerY" id="qai-BR-DFw"/>
+                                        <constraint firstItem="WKU-RI-dKz" firstAttribute="top" secondItem="Wnm-z2-dUS" secondAttribute="topMargin" constant="23.5" id="x8P-9j-xwh"/>
+                                        <constraint firstItem="ouo-6r-OGe" firstAttribute="top" secondItem="Wnm-z2-dUS" secondAttribute="top" constant="69" id="yIJ-cV-bVO"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.21305094748137862" green="0.92538177511937414" blue="0.45819066649816048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PlaylistCell"/>
+                                <connections>
+                                    <outlet property="imageView" destination="WKU-RI-dKz" id="znf-My-PhN"/>
+                                    <outlet property="playlistImage" destination="WKU-RI-dKz" id="iUg-bK-1SD"/>
+                                    <outlet property="titleLabel" destination="ouo-6r-OGe" id="6w4-DR-HbI"/>
+                                    <segue destination="Ti7-DP-ECB" kind="show" identifier="showPlaylist" id="SIg-cd-hH8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kz2-o7-C2C" id="qHa-Gq-SEs"/>
+                            <outlet property="delegate" destination="kz2-o7-C2C" id="HRh-rN-Rl9"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Edit" image="EditIcon" selectedImage="EditIcon" id="Rr3-Ze-ccc"/>
+                    <navigationItem key="navigationItem" title="DJ Playlists" id="TUz-mP-9DG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaX-U3-JDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-137.18140929535232"/>
+        </scene>
+        <!--Edit-->
+        <scene sceneID="6GP-f8-241">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4EX-Eh-X3p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Edit" id="iQl-re-izN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BHR-VP-qzN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kz2-o7-C2C" kind="relationship" relationship="rootViewController" id="cMs-fK-bjV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuN-Wl-xeI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="-138"/>
+        </scene>
+        <!--Browser-->
+        <scene sceneID="Sxd-lb-RLf">
+            <objects>
+                <viewController id="Ti7-DP-ECB" customClass="BrowserViewController" customModule="RadioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcx-VZ-1RB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XT9-GT-g6C"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Browser" image="BrowserIcon" selectedImage="BrowserIcon" id="M3Z-tt-Od0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAH-t0-ot6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="-136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BrowserIcon" width="25" height="25"/>
+        <image name="EditIcon" width="25" height="25"/>
+    </resources>
+</document>
